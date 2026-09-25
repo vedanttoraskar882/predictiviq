@@ -18,6 +18,7 @@
   --color-accent: oklch(0.754 0.139 232.7);
   --color-paper: oklch(0.947 0.011 256.7);
   --color-muted: oklch(0.685 0.041 259.3);
+  --color-danger: oklch(0.704 0.191 22.216);
 
   --font-sans: "Archivo", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;

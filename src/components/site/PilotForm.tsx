@@ -138,7 +138,7 @@ export function PilotForm() {
                   className={inputClass}
                 />
                 {errors[field.key] && (
-                  <span className="mt-2 block font-mono text-[11px] text-destructive">
+                  <span className="mt-2 block font-mono text-[11px] text-danger">
                     {errors[field.key]}
                   </span>
                 )}
@@ -156,7 +156,7 @@ export function PilotForm() {
                 className={inputClass}
               />
               {errors[field.key] && (
-                <span className="mt-2 block font-mono text-[11px] text-destructive">
+                <span className="mt-2 block font-mono text-[11px] text-danger">
                   {errors[field.key]}
                 </span>
               )}
