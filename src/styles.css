@@ -20,6 +20,30 @@
   --color-muted: oklch(0.685 0.041 259.3);
   --color-danger: oklch(0.704 0.191 22.216);
 
+  /* shadcn-compatible aliases mapped onto the ink palette */
+  --color-background: oklch(0.183 0.031 263.4);
+  --color-foreground: oklch(0.947 0.011 256.7);
+  --color-card: oklch(0.22 0.042 263.2);
+  --color-card-foreground: oklch(0.947 0.011 256.7);
+  --color-popover: oklch(0.22 0.042 263.2);
+  --color-popover-foreground: oklch(0.947 0.011 256.7);
+  --color-primary: oklch(0.773 0.153 163.2);
+  --color-primary-foreground: oklch(0.183 0.031 263.4);
+  --color-secondary: oklch(0.258 0.051 262.5);
+  --color-secondary-foreground: oklch(0.947 0.011 256.7);
+  --color-muted-foreground: oklch(0.685 0.041 259.3);
+  --color-accent-foreground: oklch(0.183 0.031 263.4);
+  --color-destructive: oklch(0.704 0.191 22.216);
+  --color-destructive-foreground: oklch(0.947 0.011 256.7);
+  --color-border: oklch(0.324 0.053 260.5);
+  --color-input: oklch(0.324 0.053 260.5);
+  --color-ring: oklch(0.754 0.139 232.7);
+  --radius: 0.625rem;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
   --font-sans: "Archivo", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
 
