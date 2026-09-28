@@ -4,10 +4,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-30 border-b border-line/70 bg-ink/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4">
-        <a href="#home" className="flex items-center gap-3">
-          <span className="grid size-9 place-items-center rounded-[10px] bg-gradient-to-br from-accent to-brand font-mono text-sm font-medium text-ink">
-            PQ
-          </span>
+        <a href="#home" className="flex items-center">
           <span className="leading-tight">
             <span className="block text-sm font-semibold tracking-tight">PredictivIQ LTD</span>
             <span className="block font-mono text-[10px] uppercase tracking-[0.2em] text-muted">

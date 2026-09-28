@@ -6,7 +6,7 @@
 
 /*
  * PredictivIQ LTD design system — dark "ink" enterprise palette with
- * mint/sky signal accents, Archivo display + IBM Plex Mono data type.
+ * mint/sky signal accents, Playfair Display + IBM Plex Mono data type.
  */
 
 @theme {
@@ -44,7 +44,8 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 
-  --font-sans: "Archivo", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
 
   --animate-floaty: floaty 9s ease-in-out infinite;

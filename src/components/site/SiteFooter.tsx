@@ -5,10 +5,7 @@ export function SiteFooter() {
     <footer className="border-t border-line/70 bg-ink2/60">
       <div className="mx-auto max-w-7xl px-6 py-12">
         <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
-          <div className="flex items-center gap-3">
-            <span className="grid size-8 place-items-center rounded-[8px] bg-gradient-to-br from-accent to-brand font-mono text-xs font-medium text-ink">
-              PQ
-            </span>
+          <div>
             <p className="text-sm text-muted">
               PredictivIQ LTD · AI-powered operational intelligence solutions
             </p>
