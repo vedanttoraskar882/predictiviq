@@ -32,7 +32,7 @@ export function About() {
   return (
     <section id="about" className="border-t border-line/70 bg-ink2/40">
       <div className="mx-auto max-w-7xl px-6 py-20">
-        <div className="grid gap-10 lg:grid-cols-12">
+        <div className="grid items-start gap-10 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-accent">About</p>
             <h2 className="mt-4 max-w-[40ch] text-3xl font-semibold tracking-tight text-balance">
@@ -60,17 +60,17 @@ export function About() {
               ))}
             </ul>
           </div>
-          <div className="grid gap-5 sm:grid-cols-2 lg:col-span-7">
+          <div className="grid self-start gap-5 sm:grid-cols-2 lg:col-span-7">
             {FOUNDERS.map((f) => (
               <div
                 key={f.name}
-                className="glass flex flex-col rounded-[14px] p-6 transition-transform hover:-translate-y-1"
+                className="glass rounded-[14px] p-5 sm:p-6 transition-transform hover:-translate-y-1"
               >
                 <p className="text-lg font-semibold">{f.name}</p>
                 <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.15em] text-accent">
                   {f.role}
                 </p>
-                <p className="mt-4 text-sm text-pretty leading-relaxed text-muted">{f.skills}</p>
+                <p className="mt-3 text-sm text-pretty leading-relaxed text-muted">{f.skills}</p>
               </div>
             ))}
           </div>
