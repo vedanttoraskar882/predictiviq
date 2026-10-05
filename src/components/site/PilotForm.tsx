@@ -33,7 +33,6 @@ function validate(values: Fields) {
     errors.fullName = "Letters, spaces, hyphens and apostrophes only.";
   }
 
-  // Strip spaces, brackets, and hyphens before validating phone digits
   const cleanPhone = values.phoneNumber.replace(/[\s\-()]/g, "");
   if (!values.phoneNumber.trim()) {
     errors.phoneNumber = "Phone number is required.";
@@ -87,7 +86,6 @@ export function PilotForm() {
 
     try {
       const existingData = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
-
       const list = Array.isArray(existingData) ? existingData : [];
 
       const newSubmission = {
@@ -117,21 +115,19 @@ export function PilotForm() {
   };
 
   return (
-    <section id="pilot" className="border-t border-slate-200/80 bg-white py-20 lg:py-24">
+    <section id="pilot" className="border-t border-slate-200/80 bg-slate-50/70 py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid gap-12 lg:grid-cols-12 lg:items-center">
           {/* Left Column Description */}
           <div className="lg:col-span-5">
             <span className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-emerald">
-              Begin Evaluation
+              Operational Pilot
             </span>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy sm:text-4xl font-serif">
-              Request an Operational Pilot on Your Own Data
+            <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl lg:text-5xl font-serif leading-tight">
+              Ready to See Where Your Losses Are Coming From?
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-slate-600">
-              Discover where shrinkage, portion drift, and unbilled supplier shortages occur across
-              your estate. PredictivIQ proposes a scoped, two-week shadow assessment with zero
-              operational disruption.
+            <p className="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">
+              Start with a pilot and discover what your operational data is telling you.
             </p>
 
             <div className="mt-8 space-y-3.5 text-xs text-slate-600">
@@ -141,7 +137,7 @@ export function PilotForm() {
               </div>
               <div className="flex items-center gap-2.5">
                 <CheckCircle2 className="size-4 text-emerald shrink-0" />
-                <span>Two-week non-intrusive shadow reconciliation audit</span>
+                <span>Two-week non-intrusive shadow reconciliation assessment</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <CheckCircle2 className="size-4 text-emerald shrink-0" />
@@ -155,9 +151,9 @@ export function PilotForm() {
             <form
               noValidate
               onSubmit={handleSubmit}
-              className="rounded-2xl border border-slate-200 bg-slate-50/80 p-8 shadow-md sm:p-10"
+              className="rounded-3xl border border-slate-200 bg-white p-8 shadow-md sm:p-10"
             >
-              <div className="flex items-center justify-between pb-5 border-b border-slate-200/80 mb-6">
+              <div className="flex items-center justify-between pb-5 border-b border-slate-100 mb-6">
                 <div>
                   <h3 className="text-xl font-bold text-navy font-serif">Pilot Application</h3>
                   <p className="text-xs text-slate-500">Fast, confidential estate assessment</p>
@@ -227,7 +223,7 @@ export function PilotForm() {
                 {/* Organisation Name */}
                 <div>
                   <label className={labelClass} htmlFor="organisationName">
-                    Organisation / Estate Name *
+                    Organisation Name *
                   </label>
                   <input
                     id="organisationName"
@@ -250,7 +246,7 @@ export function PilotForm() {
                     type="submit"
                     className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-emerald px-6 py-3.5 text-base font-semibold text-white shadow-md transition-all hover:bg-emerald-dark active:scale-[0.99] cursor-pointer"
                   >
-                    Request a Pilot
+                    REQUEST A PILOT
                     <ArrowRight className="size-4" />
                   </button>
                 </div>

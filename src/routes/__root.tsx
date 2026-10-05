@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "PredictivIQ LTD | AI-Powered Operational Intelligence" },
+      { title: "PredictivIQ LTD | SEE MORE LOSE LESS" },
       {
         name: "description",
         content:
           "PredictivIQ helps multi-site hospitality operators uncover the causes behind stock loss, waste and operational variance with AI-powered operational intelligence.",
       },
       { name: "author", content: "PredictivIQ LTD" },
-      { property: "og:title", content: "PredictivIQ LTD | AI-Powered Operational Intelligence" },
+      { property: "og:title", content: "PredictivIQ LTD | SEE MORE LOSE LESS" },
       {
         property: "og:description",
         content:
