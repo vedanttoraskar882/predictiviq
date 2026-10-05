@@ -77,13 +77,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "PredictivIQ LTD | AI-Powered Operational Intelligence Solutions" },
+      { title: "PredictivIQ LTD | AI-Powered Operational Intelligence" },
       {
         name: "description",
         content:
-          "PredictivIQ LTD provides AI-powered platforms for operational intelligence, helping businesses reduce risks, improve efficiency and make data-driven decisions.",
+          "PredictivIQ helps multi-site hospitality operators uncover the causes behind stock loss, waste and operational variance with AI-powered operational intelligence.",
       },
       { name: "author", content: "PredictivIQ LTD" },
+      { property: "og:title", content: "PredictivIQ LTD | AI-Powered Operational Intelligence" },
+      {
+        property: "og:description",
+        content:
+          "PredictivIQ helps multi-site hospitality operators uncover the causes behind stock loss, waste and operational variance with AI-powered operational intelligence.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -97,7 +103,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=IBM+Plex+Mono:wght@400;500&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=IBM+Plex+Mono:wght@400;500&display=swap",
       },
     ],
   }),

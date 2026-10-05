@@ -5,47 +5,54 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * PredictivIQ LTD design system — dark "ink" enterprise palette with
- * mint/sky signal accents, Playfair Display + IBM Plex Mono data type.
+ * PredictivIQ LTD design system — Deep Navy & Emerald Green palette with
+ * crisp white & light neutral backgrounds, Playfair Display & IBM Plex Mono.
  */
 
 @theme {
-  --color-ink: oklch(0.183 0.031 263.4);
-  --color-ink2: oklch(0.22 0.042 263.2);
-  --color-ink3: oklch(0.258 0.051 262.5);
-  --color-line: oklch(0.324 0.053 260.5);
-  --color-brand: oklch(0.773 0.153 163.2);
-  --color-accent: oklch(0.754 0.139 232.7);
-  --color-paper: oklch(0.947 0.011 256.7);
-  --color-muted: oklch(0.685 0.041 259.3);
-  --color-danger: oklch(0.704 0.191 22.216);
+  --color-navy: #0a1f38;
+  --color-navy-dark: #061528;
+  --color-navy-light: #15325b;
+  --color-navy-surface: #0e2746;
+  --color-emerald: #059669;
+  --color-emerald-light: #10b981;
+  --color-emerald-dark: #047857;
+  --color-emerald-soft: #ecfdf5;
+  --color-slate-bg: #f8fafc;
+  --color-slate-card: #ffffff;
+  --color-slate-border: #e2e8f0;
+  --color-slate-text: #0f172a;
+  --color-slate-muted: #64748b;
 
-  /* shadcn-compatible aliases mapped onto the ink palette */
-  --color-background: oklch(0.183 0.031 263.4);
-  --color-foreground: oklch(0.947 0.011 256.7);
-  --color-card: oklch(0.22 0.042 263.2);
-  --color-card-foreground: oklch(0.947 0.011 256.7);
-  --color-popover: oklch(0.22 0.042 263.2);
-  --color-popover-foreground: oklch(0.947 0.011 256.7);
-  --color-primary: oklch(0.773 0.153 163.2);
-  --color-primary-foreground: oklch(0.183 0.031 263.4);
-  --color-secondary: oklch(0.258 0.051 262.5);
-  --color-secondary-foreground: oklch(0.947 0.011 256.7);
-  --color-muted-foreground: oklch(0.685 0.041 259.3);
-  --color-accent-foreground: oklch(0.183 0.031 263.4);
-  --color-destructive: oklch(0.704 0.191 22.216);
-  --color-destructive-foreground: oklch(0.947 0.011 256.7);
-  --color-border: oklch(0.324 0.053 260.5);
-  --color-input: oklch(0.324 0.053 260.5);
-  --color-ring: oklch(0.754 0.139 232.7);
-  --radius: 0.625rem;
+  /* shadcn-compatible aliases */
+  --color-background: #f8fafc;
+  --color-foreground: #0a1f38;
+  --color-card: #ffffff;
+  --color-card-foreground: #0a1f38;
+  --color-popover: #ffffff;
+  --color-popover-foreground: #0a1f38;
+  --color-primary: #059669;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #0a1f38;
+  --color-secondary-foreground: #ffffff;
+  --color-muted: #f1f5f9;
+  --color-muted-foreground: #64748b;
+  --color-accent: #10b981;
+  --color-accent-foreground: #ffffff;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
+  --color-border: #e2e8f0;
+  --color-input: #e2e8f0;
+  --color-ring: #10b981;
+
+  --radius: 0.75rem;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 
-  --font-sans: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
   --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
 
   --animate-floaty: floaty 9s ease-in-out infinite;
@@ -55,19 +62,19 @@
   @keyframes floaty {
     0%,
     100% {
-      transform: translateY(0) rotate(-8deg);
+      transform: translateY(0) rotate(-2deg);
     }
     50% {
-      transform: translateY(-14px) rotate(-8deg);
+      transform: translateY(-8px) rotate(-2deg);
     }
   }
   @keyframes floaty2 {
     0%,
     100% {
-      transform: translateY(0) rotate(6deg);
+      transform: translateY(0) rotate(2deg);
     }
     50% {
-      transform: translateY(16px) rotate(6deg);
+      transform: translateY(10px) rotate(2deg);
     }
   }
   @keyframes scan {
@@ -81,7 +88,7 @@
   @keyframes rise {
     from {
       opacity: 0;
-      transform: translateY(18px);
+      transform: translateY(16px);
     }
     to {
       opacity: 1;
@@ -91,19 +98,27 @@
 }
 
 @utility glass {
-  background: linear-gradient(135deg, rgb(255 255 255 / 0.07), rgb(255 255 255 / 0.02));
-  border: 1px solid rgb(255 255 255 / 0.1);
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(226, 232, 240, 0.9);
   backdrop-filter: blur(14px);
+  box-shadow: 0 4px 20px -2px rgba(10, 31, 56, 0.04);
 }
 
-@utility glass2 {
-  background: linear-gradient(135deg, rgb(56 189 248 / 0.1), rgb(52 211 153 / 0.04));
-  border: 1px solid rgb(56 189 248 / 0.22);
+@utility glass-dark {
+  background: rgba(10, 31, 56, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 16px 36px -6px rgba(10, 31, 56, 0.28);
+}
+
+@utility glass-emerald {
+  background: linear-gradient(135deg, rgba(5, 150, 105, 0.08), rgba(16, 185, 129, 0.02));
+  border: 1px solid rgba(16, 185, 129, 0.25);
   backdrop-filter: blur(14px);
 }
 
 @utility rise {
-  animation: rise 0.7s ease both;
+  animation: rise 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 @utility rise-1 {
@@ -121,9 +136,16 @@
 
 @utility grid-lines {
   background-image:
-    linear-gradient(rgb(255 255 255 / 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgb(255 255 255 / 0.06) 1px, transparent 1px);
-  background-size: 44px 44px;
+    linear-gradient(rgba(10, 31, 56, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(10, 31, 56, 0.04) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+@utility grid-lines-dark {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 36px 36px;
 }
 
 @layer base {
@@ -132,13 +154,14 @@
   }
 
   body {
-    background-color: var(--color-ink);
-    color: var(--color-paper);
+    background-color: var(--color-background);
+    color: var(--color-slate-text);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
   }
 
   ::selection {
-    background-color: color-mix(in oklab, var(--color-brand) 30%, transparent);
+    background-color: rgba(16, 185, 129, 0.25);
+    color: #064e3b;
   }
 }
