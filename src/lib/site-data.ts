@@ -7,12 +7,13 @@ export const CONTACT_EMAIL = "info@predictiviq.co.uk";
 export const WEBSITE_URL = "www.predictiviq.co.uk";
 
 export const NAV_LINKS = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Platform", href: "#platform" },
-  { label: "How It Works", href: "#how-it-works" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Platform", href: "/platform" },
+  { label: "How It Works", href: "/how-it-works" },
+  { label: "Solutions", href: "/solutions" },
+  { label: "Pricing", href: "/pricing" },
+  { label: "FAQ", href: "/faq" },
 ] as const;
 
 export const FOUNDERS = [
@@ -444,31 +445,39 @@ export const FAQS = [
     a: "PredictivIQ is an operational intelligence platform that helps multi-site hospitality operators identify and understand the causes behind stock loss, waste and operational variance.",
   },
   {
-    q: "Does PredictivIQ replace our EPOS or inventory system?",
-    a: "No. PredictivIQ is designed to sit above existing operational systems and use their data as inputs.",
+    q: "Who is PredictivIQ designed for?",
+    a: "It is primarily designed for multi-site café, QSR, and hospitality operators, franchise networks, and hospitality groups running multiple trading sites.",
+  },
+  {
+    q: "Does PredictivIQ replace our existing EPOS or inventory system?",
+    a: "No. PredictivIQ is designed to sit above existing operational systems with zero hardware or contract disruption, using their sales and inventory feeds as inputs.",
   },
   {
     q: "What data does PredictivIQ use?",
-    a: "The platform is designed to reconcile POS, inventory, supplier delivery and waste-log information.",
+    a: "The platform connects and reconciles EPOS transaction sales, inventory counts, supplier delivery notes and invoices, and kitchen waste logs.",
   },
   {
-    q: "Who is PredictivIQ designed for?",
-    a: "It is primarily designed for multi-site café, QSR and hospitality operators and franchisors.",
+    q: "What types of shrinkage can PredictivIQ identify?",
+    a: "The platform can identify likely causes such as kitchen spoilage, prep discard, portion drift, supplier short-deliveries, till variance, and theft risk.",
   },
   {
-    q: "What problems can PredictivIQ identify?",
-    a: "The platform can identify likely causes such as spoilage, preparation waste, portioning drift, till variance, supplier shortfalls and theft risk.",
+    q: "How does PredictivIQ identify likely causes?",
+    a: "PredictivIQ cross-references theoretical ingredient depletion against physical stock counts, delivery receipts, and waste logs, assigning transparent statistical confidence scores to attributed causes.",
   },
   {
-    q: "How quickly can a business deploy PredictivIQ?",
-    a: "The business plan describes a phased rollout of approximately two to four weeks per estate, beginning with a data-connection audit and shadow period.",
+    q: "How does the pilot work?",
+    a: "Businesses begin with a scoped, non-intrusive two-week assessment on their operational data to evaluate reconciliation matches and quantify identified margin recovery.",
   },
   {
-    q: "Is there a pilot?",
-    a: "Yes. Businesses can request a pilot and begin with an assessment of their operational data.",
+    q: "How is PredictivIQ priced?",
+    a: "Pricing is transparent and scales with estate size: £149–£249/site/month subscription, £500–£1,500 estate onboarding, advisory included above 15 sites, and custom franchisor options.",
   },
   {
-    q: "How is pricing structured?",
-    a: "Pricing is based primarily on the number of trading sites, with onboarding and franchisor options available.",
+    q: "How quickly can implementation take place?",
+    a: "Deployment follows a structured rollout of approximately two to four weeks per estate, beginning with a data-connection audit and shadow verification period.",
+  },
+  {
+    q: "Is PredictivIQ suitable for multi-site operators?",
+    a: "Yes. PredictivIQ was purpose-built for multi-site operators, offering consolidated estate oversight, regional benchmarking league tables, and executive board reporting.",
   },
 ] as const;

@@ -1,5 +1,6 @@
+import { Link } from "@tanstack/react-router";
 import { NAV_LINKS, FOUNDERS, CONTACT_EMAIL, WEBSITE_URL } from "@/lib/site-data";
-import { Mail, Globe, Phone } from "lucide-react";
+import { Mail, Globe, Phone, ArrowRight } from "lucide-react";
 
 export function SiteFooter() {
   return (
@@ -10,11 +11,13 @@ export function SiteFooter() {
           {/* Brand Info */}
           <div className="lg:col-span-5 space-y-4">
             <div className="space-y-3">
-              <img
-                src="/logo-horizontal-white.png"
-                alt="PredictivIQ LTD"
-                className="h-11 sm:h-12 w-auto object-contain"
-              />
+              <Link to="/" className="inline-block">
+                <img
+                  src="/logo-horizontal-white.png"
+                  alt="PredictivIQ LTD"
+                  className="h-11 sm:h-12 w-auto object-contain"
+                />
+              </Link>
               <p className="font-mono text-xs uppercase tracking-[0.2em] text-emerald-400 font-bold">
                 SEE MORE. LOSE LESS.
               </p>
@@ -52,15 +55,19 @@ export function SiteFooter() {
             <ul className="space-y-2.5 text-xs text-slate-300 font-medium">
               {NAV_LINKS.map((link) => (
                 <li key={link.href}>
-                  <a href={link.href} className="hover:text-emerald-300 transition">
+                  <Link to={link.href} className="hover:text-emerald-300 transition">
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
               <li>
-                <a href="#pilot" className="text-emerald-400 font-semibold hover:underline">
-                  Request a Pilot
-                </a>
+                <Link
+                  to="/request-a-pilot"
+                  className="text-emerald-400 font-semibold hover:underline inline-flex items-center gap-1"
+                >
+                  <span>Request a Pilot</span>
+                  <ArrowRight className="size-3" />
+                </Link>
               </li>
             </ul>
           </div>

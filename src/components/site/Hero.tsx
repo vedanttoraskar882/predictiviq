@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import { ArrowRight, Layers, TrendingUp, AlertTriangle, Building2, Sparkles } from "lucide-react";
 
 export function Hero() {
@@ -45,19 +46,19 @@ export function Hero() {
 
             {/* Action Buttons */}
             <div className="mt-8 flex flex-wrap items-center gap-4">
-              <a
-                href="#pilot"
+              <Link
+                to="/request-a-pilot"
                 className="inline-flex items-center gap-2 rounded-xl bg-emerald px-6 py-3.5 text-base font-semibold text-white shadow-md transition-all hover:bg-emerald-dark hover:shadow-lg active:scale-95"
               >
                 REQUEST A PILOT
                 <ArrowRight className="size-4" />
-              </a>
-              <a
-                href="#platform"
+              </Link>
+              <Link
+                to="/platform"
                 className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-6 py-3.5 text-base font-semibold text-navy shadow-xs transition-all hover:border-slate-400 hover:bg-slate-50"
               >
                 EXPLORE PLATFORM
-              </a>
+              </Link>
             </div>
 
             {/* Key Operational Pillars (Visual Indicators) */}

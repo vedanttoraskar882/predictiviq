@@ -1,26 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
-
-import { SiteHeader } from "@/components/site/SiteHeader";
 import { Hero } from "@/components/site/Hero";
 import { VisualStatement } from "@/components/site/VisualStatement";
 import { Problem } from "@/components/site/Problem";
-import { Platforms } from "@/components/site/Platforms";
-import { Workflow } from "@/components/site/Workflow";
-import { ProductDashboard } from "@/components/site/ProductDashboard";
-import { FeatureShowcase } from "@/components/site/FeatureShowcase";
-import { DailyWorkflow } from "@/components/site/DailyWorkflow";
-import { MultiSiteOperations } from "@/components/site/MultiSiteOperations";
-import { Innovation } from "@/components/site/Innovation";
-import { CompetitiveDiff } from "@/components/site/CompetitiveDiff";
-import { MarketOpportunity } from "@/components/site/MarketOpportunity";
-import { Pricing } from "@/components/site/Pricing";
-import { About } from "@/components/site/About";
-import { TrustSustainability } from "@/components/site/TrustSustainability";
-import { Faq } from "@/components/site/Faq";
-import { PilotForm } from "@/components/site/PilotForm";
-import { SiteFooter } from "@/components/site/SiteFooter";
+import {
+  HomeFeaturePreview,
+  HomeWorkflowPreview,
+  HomeMultiSitePreview,
+  HomePricingPreview,
+  HomeFinalCta,
+} from "@/components/site/HomePreviews";
 
-const TITLE = "PredictivIQ LTD | SEE MORE LOSE LESS";
+const TITLE = "PredictivIQ LTD | AI-Powered Operational Intelligence";
 const DESCRIPTION =
   "PredictivIQ helps multi-site hospitality operators uncover the causes behind stock loss, waste and operational variance with AI-powered operational intelligence.";
 
@@ -35,66 +25,35 @@ export const Route = createFileRoute("/")({
       { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
-  component: Index,
+  component: HomePage,
 });
 
-function Index() {
+function HomePage() {
   return (
-    <div className="min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-emerald/20 selection:text-emerald-900">
-      <SiteHeader />
-      <main>
-        {/* 1. Hero */}
-        <Hero />
+    <>
+      {/* 1. Hero: See More. Lose Less. */}
+      <Hero />
 
-        {/* 2. Visual Statement (Your systems tell you WHAT happened. PredictivIQ helps explain WHY.) */}
-        <VisualStatement />
+      {/* 2. Visual Statement: Your systems tell you WHAT happened. PredictivIQ helps explain WHY. */}
+      <VisualStatement />
 
-        {/* 3. The Problem (Too Much Data. Not Enough Diagnosis.) */}
-        <Problem />
+      {/* 3. Problem Section: 4 Data Sources (POS, Inventory, Delivery, Waste) -> PredictivIQ Intelligence Layer */}
+      <Problem />
 
-        {/* 4. PredictivIQ Platform (One Intelligence Layer Across Your Operation) */}
-        <Platforms />
+      {/* 4. Feature Preview: 6 major capabilities with links to /solutions */}
+      <HomeFeaturePreview />
 
-        {/* 5. How It Works (01 Connect -> 02 Reconcile -> 03 Diagnose -> 04 Prioritise -> 05 Act -> 06 Improve) */}
-        <Workflow />
+      {/* 5. How It Works Preview: Connect -> Reconcile -> Diagnose -> Prioritise -> Act -> Improve */}
+      <HomeWorkflowPreview />
 
-        {/* 6. Product Dashboard (Realistic interactive dashboard mockup) */}
-        <ProductDashboard />
+      {/* 6. Multi-Site Operations Preview */}
+      <HomeMultiSitePreview />
 
-        {/* 7. Feature Showcase (6 alternating editorial visual sections) */}
-        <FeatureShowcase />
+      {/* 7. Pricing Preview */}
+      <HomePricingPreview />
 
-        {/* 8. A Day With PredictivIQ (Morning, Review, Action, Corrective Action, Weekly, Monthly) */}
-        <DailyWorkflow />
-
-        {/* 9. Multi-Site Operations & Mobile App Experience */}
-        <MultiSiteOperations />
-
-        {/* 10. Innovation (Beyond Reporting. Into Diagnosis.) */}
-        <Innovation />
-
-        {/* 11. Competitive Positioning */}
-        <CompetitiveDiff />
-
-        {/* 12. Market Opportunity */}
-        <MarketOpportunity />
-
-        {/* 13. Pricing (Pricing That Scales With Your Estate) */}
-        <Pricing />
-
-        {/* 14. About / Founders (Built From Real Operational Experience) */}
-        <About />
-
-        {/* 15. Trust, Security & Sustainability */}
-        <TrustSustainability />
-
-        {/* 16. FAQ (Clean accordion) */}
-        <Faq />
-
-        {/* 17. Request a Pilot (Ready to See Where Your Losses Are Coming From?) */}
-        <PilotForm />
-      </main>
-      <SiteFooter />
-    </div>
+      {/* 8. Final CTA: Ready to See Where Your Losses Are Coming From? */}
+      <HomeFinalCta />
+    </>
   );
 }
