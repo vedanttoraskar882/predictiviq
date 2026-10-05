@@ -100,8 +100,8 @@ export function Hero() {
                   <div className="flex items-center gap-3">
                     <img
                       src="/logo-emblem.png"
-                      alt="PredictivIQ Emblem"
-                      className="size-9 object-contain"
+                      alt="PredictivIQ Mark"
+                      className="h-9 w-auto object-contain"
                     />
                     <div>
                       <p className="text-xs font-mono uppercase tracking-wider text-emerald-300">

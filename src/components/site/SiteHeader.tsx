@@ -8,11 +8,11 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/90 backdrop-blur-md transition-all">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-3.5">
-        <a href="#home" className="flex items-center group py-0.5" aria-label="PredictivIQ Home">
+        <a href="#home" className="flex items-center group py-0.5">
           <img
-            src="/logo-navbar.png"
-            alt="PredictivIQ - See More. Lose Less."
-            className="h-12 sm:h-14 md:h-16 w-auto object-contain transition-transform group-hover:scale-[1.02]"
+            src="/logo-horizontal.png"
+            alt="PredictivIQ"
+            className="h-11 sm:h-12 md:h-13 w-auto object-contain transition-transform group-hover:scale-[1.03]"
           />
         </a>
 

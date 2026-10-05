@@ -9,13 +9,16 @@ export function SiteFooter() {
         <div className="grid gap-12 lg:grid-cols-12 pb-12 border-b border-white/10">
           {/* Brand Info */}
           <div className="lg:col-span-5 space-y-4">
-            <a href="#home" className="inline-block" aria-label="PredictivIQ Home">
+            <div className="space-y-2">
               <img
-                src="/logo-navbar-darkbg.png"
-                alt="PredictivIQ LTD - See More. Lose Less."
-                className="h-12 w-auto object-contain"
+                src="/logo-horizontal-white.png"
+                alt="PredictivIQ LTD"
+                className="h-11 sm:h-12 w-auto object-contain"
               />
-            </a>
+              <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-emerald-400">
+                See More. Lose Less.
+              </p>
+            </div>
 
             <p className="text-xs text-slate-300 max-w-sm leading-relaxed">
               AI-Powered Operational Intelligence for a More Profitable Food Future. Connecting
