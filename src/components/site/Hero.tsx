@@ -99,9 +99,9 @@ export function Hero() {
                 <div className="flex items-center justify-between border-b border-white/10 pb-4">
                   <div className="flex items-center gap-3">
                     <img
-                      src="/logo-predictiviq.png"
-                      alt="PredictivIQ Mark"
-                      className="h-8 w-auto rounded bg-white p-0.5"
+                      src="/logo-emblem.png"
+                      alt="PredictivIQ Emblem"
+                      className="size-9 object-contain"
                     />
                     <div>
                       <p className="text-xs font-mono uppercase tracking-wider text-emerald-300">

@@ -8,20 +8,12 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/90 backdrop-blur-md transition-all">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-3.5">
-        <a href="#home" className="flex items-center gap-3 group">
+        <a href="#home" className="flex items-center group py-0.5" aria-label="PredictivIQ Home">
           <img
-            src="/logo-predictiviq.png"
-            alt="PredictivIQ Logo"
-            className="h-10 w-auto object-contain transition-transform group-hover:scale-105"
+            src="/logo-navbar.png"
+            alt="PredictivIQ - See More. Lose Less."
+            className="h-12 sm:h-14 md:h-16 w-auto object-contain transition-transform group-hover:scale-[1.02]"
           />
-          <div className="leading-tight">
-            <span className="block text-base font-bold tracking-tight text-navy">
-              PredictivIQ <span className="text-xs font-normal text-slate-500">LTD</span>
-            </span>
-            <span className="block font-mono text-[9px] uppercase tracking-[0.2em] text-emerald">
-              See More. Lose Less.
-            </span>
-          </div>
         </a>
 
         {/* Desktop Navigation */}
